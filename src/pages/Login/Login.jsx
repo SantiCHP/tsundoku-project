@@ -27,7 +27,7 @@ const Login = (props) => {
         // Envío de los datos del formulario ( data ) al servidor
 		// console.log(data);
 			await axios
-            .post('http://tsundoku-application.herokuapp.com/api/tsundoku/usuarios/login', {
+            .post('REACT_APP_BACKEND_URL'+'/api/tsundoku/usuarios/login', {
                 email: data.email,
                 password: data.password,
             })

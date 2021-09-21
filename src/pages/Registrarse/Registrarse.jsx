@@ -28,7 +28,7 @@ const {
 		// Envío de los datos del formulario ( data ) al servidor
 		console.log(data);
 			await axios
-				.post('https://tsundoku-application.herokuapp.com/api/tsundoku/usuarios/alta', {
+				.post('REACT_APP_BACKEND_URL'+'/api/tsundoku/usuarios/alta', {
                     nombre:data.nombre,
 					email: data.email,
 					password: data.password,
