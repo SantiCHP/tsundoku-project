@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Helvetica Neue';
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 68vh;
+}
+
+.card {
+    position: relative;
+    width: 290px;
+    height: 400px;
+    /* background: #fff; */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descripcion{
+    overflow-y: scroll;
+    height: 95px;
+    position: relative;
+    /* background: #fff; */
+}
+
+.card:hover {
+    transform: translateX(50%);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: #000;
+    transition: 1s;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.card:hover .imgBox {
+    transform: rotateY(-180deg);
+}
+
+
+.card .imgBox img:nth-child(2){
+    transform: rotateY(-180deg);
+}
+
+
+.card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+}
+
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.card .details .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    line-height: 1.2rem;
+    color:black;
+}
+
+.card .details .content h5 h6 p {
+    text-align: center;
+    font-weight: 700;
+    line-height: 0.5rem;
+}
+
+.card .details .content h5 h6 p spam {
+    color: #e21212;
+    font-size: 0.8em;
+}
+
+.card .details .content .social-icons {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .details .content .social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card .details .content a:hover {
+    background: #e21212;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.boton {
+    padding: 0.5rem 1rem;
+    height: 93%;
+    margin: 0.15rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: purple;
+    background: rgba(240, 240, 240, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0.0px);
+    -webkit-backdrop-filter: blur(0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.boton:hover {
+    transform: translateY(-0.15rem);
+    background: rgba(128, 0, 128, 0.363);
+    color: white;
+    box-shadow: 0 18px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: 0.1s linear;
+}
+
+.boton:active {
+    transform: translateY(-0.10rem);
+    background: rgba(121, 121, 121, 0.363);
+    color: purple;
+    box-shadow: 0 18px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+/* .fas .fa-heart {
+    color: red !important;
+} */
+i.fas.fa-heart{
+    color:red;
+}
+i.fas.fa-award{
+    color:rgb(189, 138, 10);
+}
+i.fas.fa-heart:active{
+color:white;
+}

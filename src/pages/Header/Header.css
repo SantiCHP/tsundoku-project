@@ -1,0 +1,70 @@
+Nav {
+    border-radius: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+#logo,
+.buttonHome {
+    color: #57bf4f !important;
+    text-shadow: 0 0px 9.6px rgba(0, 0, 0, 0.048), 0 0px 22.5px rgba(0, 0, 0, 0.062), 0 0px 42.8px rgba(0, 0, 0, 0.068), 0 0px 83.3px rgba(225, 225, 225, 225.07), 0 0px 223px rgba(225, 225, 225, 225.07);
+}
+
+.buttonHome.navbar-toggler {
+    margin-right: 0.6rem;
+    border-radius: 48%;
+}
+
+.buttonHome.navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px #57bf4f solid;
+}
+
+.navbar-toggler-icon {}
+
+Nav .me-auto {
+    width: 100%;
+    display: flex !important;
+    /* flex-direction: row; */
+    justify-content: right;
+}
+
+.nav-link {
+    margin-left: 0.7rem;
+    color: #57bf4f !important;
+}
+
+.navbar-brand {
+    margin-left: 0.7rem;
+    display: flex !important;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 83%;
+}
+
+ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+#buttonHome {
+    text-decoration: none;
+    list-style: none;
+}
+
+#barra {
+    background-color: #9359a9 !important;
+    border-radius: 6px !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+    position: absolute !important;
+    position: fixed !important;
+    z-index: 5;
+}
+
+#logo {
+    color: #57bf4f !important;
+    text-shadow: 0 0px 9.6px rgba(0, 0, 0, 0.048), 0 0px 22.5px rgba(0, 0, 0, 0.062), 0 0px 42.8px rgba(0, 0, 0, 0.068), 0 0px 83.3px rgba(225, 225, 225, 225.07), 0 0px 223px rgba(225, 225, 225, 225.07);
+}

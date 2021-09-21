@@ -1,0 +1,48 @@
+.boton {
+    padding: 0.5rem 1rem;
+    height: 93%;
+    margin: 0.15rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: purple;
+    background: rgba(240, 240, 240, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0.0px);
+    -webkit-backdrop-filter: blur(0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.boton:hover {
+    transform: translateY(-0.15rem);
+    background: rgba(128, 0, 128, 0.363);
+    color: white;
+    box-shadow: 0 18px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: 0.1s linear;
+}
+
+.boton:active {
+    transform: translateY(-0.10rem);
+    background: rgba(121, 121, 121, 0.363);
+    color: purple;
+    box-shadow: 0 18px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+.fas .fa-heart {
+    color: red !important;
+}
+i.fas.fa-heart{
+    color:red;
+}
+i.fas.fa-award{
+    color:rgb(189, 138, 10);
+}
+i.fas.fa-heart:active{
+color:white;
+}
