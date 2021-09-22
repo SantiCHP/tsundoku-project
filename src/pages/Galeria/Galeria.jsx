@@ -13,7 +13,7 @@ const Galeria = (props) => {
     });
     useEffect(()=>{handlerLanzaListaComics()},[]);
     return (
-        <div className="me-2">
+        <div>
             <Header />
         <div id="fondo">
         <div id="aside">

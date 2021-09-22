@@ -32,7 +32,7 @@ function App() {
     // Variable para los comics
     const [comics, setComics] = useState([]);
     const verComics = async() => {
-            axios.get("REACT_APP_BACKEND_URL" + "/api/tsundoku/comics/")
+            axios.get("http://localhost:5000/api/tsundoku/comics")
                 .then((response) => {
                     console.log(response.data.comics);
                     setComics(response.data.comics);
@@ -54,6 +54,7 @@ function App() {
     return (
 			<div className="App">
 				<Router>
+					
 					<Switch>
 						<Route exact path="/tsundoku/">
 							<Login gestionarAcceso={gestionarAcceso} />
@@ -74,7 +75,7 @@ function App() {
 						<Route exact path="/tsundoku/coleccion">
 							<Coleccion />
 						</Route>
-						<Redirect to="/tsundoku/inicio" />
+						<Redirect to="/tsundoku/" />
 					</Switch>
 					{/* <Footer /> */}
 				</Router>

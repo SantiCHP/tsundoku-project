@@ -27,7 +27,7 @@ const Login = (props) => {
         // Envío de los datos del formulario ( data ) al servidor
 		// console.log(data);
 			await axios
-            .post('REACT_APP_BACKEND_URL'+'/api/tsundoku/usuarios/login', {
+            .post('http://localhost:5000/api/tsundoku/usuarios/login', {
                 email: data.email,
                 password: data.password,
             })
@@ -74,8 +74,8 @@ const Login = (props) => {
 					)}
 					<div className="botonesForm">
 
-						<button className="btn-login" type='submit'>Completar</button>
-						<button className="btn-login"><Link to="/tsundoku/" className="enlace">Cancelar</Link></button>
+						<button className="btn-login" type='submit'>Acceder</button>
+						<button className="btn-login"><Link to="/tsundoku/alta" className="enlace">Registrase</Link></button>
 						{/* <input type='submit' value="Registrarse"/> */}
 					</div>
 				</form>
