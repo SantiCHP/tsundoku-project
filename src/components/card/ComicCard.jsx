@@ -8,9 +8,6 @@ console.log(info);
 // const cardData = props.
 
 
-
-
-
 return (
 <div className="contenedor">
     <div className="card">

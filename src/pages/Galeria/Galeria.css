@@ -291,3 +291,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#busca{
+    width: 200px;
+    margin-top: 0.8rem;
+    /* margin-left: 45%; */
+    text-align: center;
+  }
