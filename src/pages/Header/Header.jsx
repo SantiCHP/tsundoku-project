@@ -24,7 +24,7 @@ return (
       <Nav className="me-auto">
         <Nav.Link><Link to="/tsundoku/Inicio" className="nav-link" id='buttonHome'>Inicio</Link></Nav.Link>
         <Nav.Link><Link to="/tsundoku/Galeria" className="nav-link" id='buttonHome'>Galeria</Link></Nav.Link>
-        <Nav.Link><Link to="/tsundoku/Coleccion" className="nav-link" id='buttonHome'>Conleccion</Link></Nav.Link>
+        <Nav.Link><Link to="/tsundoku/Coleccion" className="nav-link" id='buttonHome'>Coleccion</Link></Nav.Link>
         {/* <Nav.Link><Link to="/tsundoku/Logout" className="nav-link" id='buttonHome'>Logout</Link></Nav.Link> */} 
       </Nav>
     </Navbar.Collapse>

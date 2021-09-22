@@ -12,9 +12,50 @@ const Galeria = (props) => {
         props.onVerComics();
     });
     useEffect(()=>{handlerLanzaListaComics()},[]);
+
+          // -------------------------Funcion Buscar-----------------
+
+  const gestorBuscar = (e) => {
+    setComics(e.target.value);
+  }
+  const buscaDatos = async () => {
+    try {
+      let resp = await fetch("REACT_APP_BACKEND_URL" + "/api/tsundoku/comics/");
+      let resu = await resp.json();
+      const busqueda = resu.filter((element) =>{
+        return element.Titulo === comics;
+      })
+      if(comics === ""){
+      setComics(resu)
+      return resu;
+    } else{
+      setComics(busqueda)
+      return resu;
+    }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+
+  useEffect(() => {
+  buscaDatos();
+  }, [comics])
+
+  
+  const busquedaComics = (e)=>{
+    e.preventDefault();
+    const buscar = comics;
+    setComics(buscar);
+    setComics("");
+  }
+
     return (
         <div>
             <Header />
+            <form action="" onSubmit={busquedaComics} id="form">
+                <input type="text" name="busca" id="busca" placeholder="Search Comic" onChange={gestorBuscar} value={comics} className="form-control me-sm-2"/>
+            </form>
         <div id="fondo">
         <div id="aside">
             <div id="slider">
